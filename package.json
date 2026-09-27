@@ -1,0 +1,29 @@
+{
+  "name": "nofly-crdt-replay",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "野外无人机编队禁飞标签 observed-remove 因果收敛回放",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:run": "vitest run",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "node scripts/smoke.mjs",
+    "verify": "npm run test:run && npm run build && npm run smoke"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.5"
+  }
+}
